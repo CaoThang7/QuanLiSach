@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/insert"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/titleuser"
+        style="@style/Textchu"
+        android:layout_alignParentTop="true"
+        android:text="Thêm Thể loại"
+        android:textStyle="bold"
+        android:textColor="#EF2727"/>
+    <EditText
+        android:id="@+id/edMaTheLoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã thể loại" />
+
+    <EditText
+        android:id="@+id/edTenTheLoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên thể loại" />
+
+    <EditText
+        android:id="@+id/edMoTa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mô tả" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnAddTheLoai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="addTheLoai"
+            android:text="Lưu" />
+
+        <Button
+            android:id="@+id/btnCancelTheLoai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Huỷ" />
+    </LinearLayout>
+
+<!--    <Button-->
+<!--        android:id="@+id/btnShowTheLoai"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:onClick="showTheLoai"-->
+<!--        android:text="show" />-->
+
+</LinearLayout>

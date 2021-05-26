@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/khoantc_item"
+    app:cardCornerRadius="20dp"
+    android:elevation="5dp"
+    app:cardBackgroundColor="@android:color/darker_gray"
+    android:padding="8dp">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+        <EditText
+            android:id="@+id/tvTieuDe"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="EDIT BOOK"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#FA0505"
+            android:background="#88FD00"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="8dp"/>
+
+        <EditText
+            android:id="@+id/tvmasach"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/tvTieuDe"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="left|center_vertical"
+            android:hint="Ma sach" />
+
+        <EditText
+        android:id="@+id/tvgia"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/tvmasach"
+        android:layout_alignParentLeft="true"
+        android:hint="Price"
+        android:gravity="left|center_vertical"
+        android:layout_margin="8dp"/>
+
+        <EditText
+            android:id="@+id/assignment"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/tvgia"
+            android:layout_alignParentLeft="true"
+            android:hint="assignment"
+            android:gravity="left|center_vertical"
+            android:layout_margin="8dp"/>
+
+
+
+        <Spinner
+            android:id="@+id/spn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/assignment" />
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/ktcSeparate"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/spn"
+            android:background="@android:color/black"
+            android:layout_margin="8dp"/>
+
+
+<!--        <Button-->
+<!--            android:id="@+id/btnThem"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Them"-->
+<!--            android:layout_below="@+id/ktcSeparate"/>-->
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

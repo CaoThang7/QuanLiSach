@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/titleuser"
+        style="@style/Textchu"
+        android:layout_alignParentTop="true"
+        android:text="Edit Thể loại"
+        android:textStyle="bold"
+        android:background="#88FD00"
+        android:textColor="#EF2727"/>
+    <EditText
+        android:id="@+id/etmatl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ma the loai" />
+    <EditText
+        android:id="@+id/ettentll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ten the loai" />
+
+    <EditText
+        android:id="@+id/etmota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mo ta" />
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/hinhmenu3"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dsSach"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvKhoanTC"/>
+
+
+
+
+
+<!--        <com.google.android.material.tabs.TabLayout-->
+<!--        android:id="@+id/tabLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:minHeight="?actionBarSize"-->
+<!--        app:tabGravity="fill"-->
+<!--        app:tabIndicatorHeight="4dp"-->
+<!--        app:tabIndicatorColor="#fff"-->
+<!--        app:tabTextColor="#fff"-->
+<!--        app:tabBackground="@color/colorPrimary"-->
+<!--        app:tabMode="fixed">-->
+<!--    </com.google.android.material.tabs.TabLayout>-->
+<!--    <androidx.viewpager.widget.ViewPager-->
+<!--        android:id="@+id/viewPager"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--    </androidx.viewpager.widget.ViewPager>-->
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnInsertSach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="1dp"/>
+
+</RelativeLayout>

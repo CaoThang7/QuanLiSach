@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'  // Google Services plugin
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.example.duanmau_ps12545_lycaothanggd"
+        minSdkVersion 24
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.google.android.material:material:1.2.0'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.1.+'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    // Add the dependency for the Firebase SDK for Google Analytics
+    implementation 'com.google.firebase:firebase-analytics:17.5.0'
+    implementation 'com.google.firebase:firebase-database:19.5.0'
+
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    // add two dependencies in build.gradle (Module: app)
+    // universal image loader
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    // circular image view library
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+
+}
