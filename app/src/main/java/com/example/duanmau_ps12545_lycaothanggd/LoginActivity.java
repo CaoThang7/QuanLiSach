@@ -28,7 +28,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        ggg = (LinearLayout) findViewById(R.id.ggg);
+        ggg = (LinearLayout)findViewById(R.id.ggg);
         ggg.setBackgroundResource(R.drawable.hinhnen3);
 
 
